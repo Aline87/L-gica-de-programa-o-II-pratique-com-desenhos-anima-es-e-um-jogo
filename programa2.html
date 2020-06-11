@@ -1,0 +1,35 @@
+<!-- bandeira-brasil.html -->
+
+<canvas width="600" height="400"></canvas>
+
+<script>
+    function desenhaQuadrado(x, y, cor) {
+
+
+        var tela = document.querySelector("canvas");
+        var pincel = tela.getContext('2d');
+
+        pincel.fillStyle = cor;
+        pincel.fillRect(x, y, 50, 50);
+        pincel.fillStroke = "black";
+        pincel.strokeRect(x, y, 50, 50);
+
+    }
+    var x = 0;
+    while (x < 600) {
+        x = x + 50;
+        desenhaQuadrado(x, 0, "pink");
+        desenhaQuadrado(x, 50, "purple");
+        desenhaQuadrado(x, 100, "blue");
+        desenhaQuadrado(x, 150, "yellow");
+        desenhaQuadrado(x, 200, "darkgreen");
+        desenhaQuadrado(x, 250, "pink");
+        desenhaQuadrado(x, 300, "purple");
+        desenhaQuadrado(x, 350, "blue");
+        desenhaQuadrado(x, 400, "yellow");
+        desenhaQuadrado(x, 450, "darkgreen");
+        desenhaQuadrado(x, 500, "pink");
+        desenhaQuadrado(x, 550, "purple");
+        desenhaQuadrado(x, 600, "blue");
+    }
+</script>
